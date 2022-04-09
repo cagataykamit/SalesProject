@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{CD4C435D-6419-4813-9F75-A41C479E26F7}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{7FFFDDC7-623F-49B6-8857-CFEECE3FA145}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesConsoleUI", "ConsoleUI1\SalesConsoleUI.csproj", "{4999D565-BB9B-48B1-BDBD-8A240E01255E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{13B6C64D-1D4E-462C-9666-996050BFC038}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesConsoleUI", "ConsoleUI1\SalesConsoleUI.csproj", "{4999D565-BB9B-48B1-BDBD-8A240E01255E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{7FFFDDC7-623F-49B6-8857-CFEECE3FA145}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{CD4C435D-6419-4813-9F75-A41C479E26F7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesUnitTest", "SalesUnitTest\SalesUnitTest.csproj", "{1F23242C-5211-4D7E-A4BB-09724B717F67}"
 EndProject

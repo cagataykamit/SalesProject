@@ -1,6 +1,9 @@
 # SalesProject
+
 - Projeyi Visual Studio 2019'da geliştirdim.
-- Projeyi çalıştırmak için SalesConsoleUI'ya sağ tıklayıp set a startup project yapmanız gerekiyor.
+
+# Projeyi çalıştırmak için
+- SalesConsoleUI'ya sağ tıklayıp set a startup project yapmanız gerekiyor.
 - UnitTestleri çalıştırmak için SaleUnitTest'e sağ tıklayıp RunTest'e tıklamanız gerekiyor.
 
 

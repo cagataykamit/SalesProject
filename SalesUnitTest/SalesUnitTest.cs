@@ -78,5 +78,12 @@ namespace SalesUnitTest
             Assert.AreEqual(totalAmount, 12090);
             Assert.AreEqual(discountAmount, 3910);
         }
+
+        [TestMethod]
+        public void TestSales()
+        {
+            SalesManager salesManager = new SalesManager();
+            salesManager.DoSale();
+        }
     }
 }

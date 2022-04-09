@@ -4,7 +4,7 @@
 - UnitTest aracı olarak MSTest.TestAdapter kullandım.
 
 # Projeyi çalıştırmak için
-- Uygulamayı indirip F5'e basarak çalıştırabilirsiniz.
+- Projeyi indirip Visual Studio 2019'da açtıktan sonra F5'e basarak çalıştırabilirsiniz.
 - UnitTestleri çalıştırmak için SaleUnitTest'e sağ tıklayıp RunTest'e tıklamanız gerekiyor.
 
 

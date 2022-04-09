@@ -3,7 +3,7 @@
 - Projeyi Visual Studio 2019'da geliştirdim.
 
 # Projeyi çalıştırmak için
-- SalesConsoleUI'ya sağ tıklayıp set a startup project yapmanız gerekiyor.
+- Uygulamayı indirip F5'e basarak çalıştırabilirsiniz.
 - UnitTestleri çalıştırmak için SaleUnitTest'e sağ tıklayıp RunTest'e tıklamanız gerekiyor.
 
 

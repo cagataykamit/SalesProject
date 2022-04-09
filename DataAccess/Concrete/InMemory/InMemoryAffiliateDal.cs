@@ -12,7 +12,7 @@ namespace DataAccess.Concrete.InMemory
     public class InMemoryAffiliateDal : IAffiliateDal
     {
 
-        List<Affiliate> _affiliates;
+        readonly List<Affiliate> _affiliates;
         public InMemoryAffiliateDal()
         {
             _affiliates = new List<Affiliate>()

@@ -12,7 +12,7 @@ namespace DataAccess.Concrete.InMemory
     // InMemoryProductDal : Bellek üzerinde ürünle ilgili veri erişim kodlarının yazılacağı yer
     public class InMemoryProductDal:IProductDal
     {
-        List<Product> _products;
+        readonly List<Product> _products;
         public InMemoryProductDal()
         {
             _products = new List<Product>() 

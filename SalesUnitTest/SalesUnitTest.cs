@@ -9,81 +9,72 @@ namespace SalesUnitTest
         [TestMethod]
         public void TestMultipleAndAdditional()
         {
-            SalesManager salesManager = new SalesManager();
-            decimal res = salesManager.CalculateAdditionalDiscounts(950);
-            Assert.AreEqual(res, 20);
+            decimal res = SalesManager.CalculateAdditionalDiscounts(950);
+            Assert.AreEqual(20, res);
         }
         [TestMethod]
         public void TestBase()
         {
-            SalesManager salesManager = new SalesManager();
-            decimal res = salesManager.CalculateAdditionalDiscounts(200);
-            Assert.AreEqual(res, 5);
+            decimal res = SalesManager.CalculateAdditionalDiscounts(200);
+            Assert.AreEqual(5, res);
         }
         [TestMethod]
         public void TestBelow()
         {
-            SalesManager salesManager = new SalesManager();
-            decimal res = salesManager.CalculateAdditionalDiscounts(195);
-            Assert.AreEqual(res, 0);
+            decimal res = SalesManager.CalculateAdditionalDiscounts(195);
+            Assert.AreEqual(0, res);
         }
         [TestMethod]
         public void TestMultiple()
         {
-            SalesManager salesManager = new SalesManager();
-            decimal res = salesManager.CalculateAdditionalDiscounts(400);
-            Assert.AreEqual(res, 10);
+            decimal res = SalesManager.CalculateAdditionalDiscounts(400);
+            Assert.AreEqual(10, res);
         }
         [TestMethod]
         public void TestZeroRate()
         {
-            SalesManager salesManager = new SalesManager();
-            decimal totalAmount = salesManager.CalculateAllDiscounts(0, 12000, 4000, out decimal discountAmount);
-            Assert.AreEqual(totalAmount, 15600);
-            Assert.AreEqual(discountAmount, 400);
+            decimal totalAmount = SalesManager.CalculateAllDiscounts(0, 12000, 4000, out decimal discountAmount);
+            Assert.AreEqual(15600, totalAmount);
+            Assert.AreEqual(400, discountAmount);
         }
 
         [TestMethod]
         public void TestNonPercDiscountable()
         {
-            SalesManager salesManager = new SalesManager();
-            decimal totalAmount = salesManager.CalculateAllDiscounts(0, 0, 4000, out decimal discountAmount);
-            Assert.AreEqual(totalAmount, 3900);
-            Assert.AreEqual(discountAmount, 100);
+            decimal totalAmount = SalesManager.CalculateAllDiscounts(0, 0, 4000, out decimal discountAmount);
+            Assert.AreEqual(3900, totalAmount);
+            Assert.AreEqual(100, discountAmount);
         }
 
         [TestMethod]
         public void TestOnlyPercentageBased()
         {
-            SalesManager salesManager = new SalesManager();
-            decimal totalAmount = salesManager.CalculateAllDiscounts(0.30m, 100, 0, out decimal discountAmount);
-            Assert.AreEqual(totalAmount, 70);
-            Assert.AreEqual(discountAmount, 30);
+            decimal totalAmount = SalesManager.CalculateAllDiscounts(0.30m, 100, 0, out decimal discountAmount);
+            Assert.AreEqual(70, totalAmount);
+            Assert.AreEqual(30, discountAmount);
         }
 
         [TestMethod]
         public void TestAllDiscountable()
         {
-            SalesManager salesManager = new SalesManager();
-            decimal totalAmount = salesManager.CalculateAllDiscounts(0.30m, 12000, 0, out decimal discountAmount);
-            Assert.AreEqual(totalAmount, 8190);
-            Assert.AreEqual(discountAmount, 3810);
+            decimal totalAmount = SalesManager.CalculateAllDiscounts(0.30m, 12000, 0, out decimal discountAmount);
+            Assert.AreEqual(8190, totalAmount);
+            Assert.AreEqual(3810, discountAmount);
         }
 
         [TestMethod]
         public void TestAll()
         {
-            SalesManager salesManager = new SalesManager();
-            decimal totalAmount = salesManager.CalculateAllDiscounts(0.30m, 12000, 4000, out decimal discountAmount);
-            Assert.AreEqual(totalAmount, 12090);
-            Assert.AreEqual(discountAmount, 3910);
+            decimal totalAmount = SalesManager.CalculateAllDiscounts(0.30m, 12000, 4000, out decimal discountAmount);
+            Assert.AreEqual(12090, totalAmount);
+            Assert.AreEqual(3910, discountAmount);
         }
 
         [TestMethod]
         public void TestSales()
         {
-            SalesManager salesManager = new SalesManager();
-            salesManager.DoSale();
+            int res = SalesManager.DoSale();
+            Assert.AreEqual(0, res);
         }
     }
 }

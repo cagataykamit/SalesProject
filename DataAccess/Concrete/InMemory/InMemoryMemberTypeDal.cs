@@ -11,7 +11,7 @@ namespace DataAccess.Concrete.InMemory
 {
     public class InMemoryMemberTypeDal: IMemberTypeDal
     {
-        List<MemberType> _memberTypes;
+        readonly List<MemberType> _memberTypes;
         public InMemoryMemberTypeDal()
         {
             _memberTypes = new List<MemberType>()

@@ -12,7 +12,7 @@ namespace DataAccess.Concrete.InMemory
     class InMemoryCategoryDal : ICategoryDal
     {
 
-        List<Category> _categories;
+        readonly List<Category> _categories;
         public InMemoryCategoryDal()
         {
             _categories = new List<Category>()

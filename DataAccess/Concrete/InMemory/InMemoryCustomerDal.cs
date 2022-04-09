@@ -11,7 +11,7 @@ namespace DataAccess.Concrete.InMemory
 {
     public class InMemoryCustomerDal : ICustomerDal
     {
-        List<Customer> _customers;
+        readonly List<Customer> _customers;
         public InMemoryCustomerDal()
         {
             _customers = new List<Customer>()

@@ -1,0 +1,7 @@
+﻿C:\Users\kasif\source\repos\SaleProjext\Business\Abstract\IBasketService.cs
+C:\Users\kasif\source\repos\SaleProjext\Business\Abstract\ICustomerService.cs
+C:\Users\kasif\source\repos\SaleProjext\Business\Abstract\IProductService.cs
+C:\Users\kasif\source\repos\SaleProjext\Business\Concrete\BasketManager.cs
+C:\Users\kasif\source\repos\SaleProjext\Business\Concrete\CustomerManager.cs
+C:\Users\kasif\source\repos\SaleProjext\Business\Concrete\ProductManager.cs
+C:\Users\kasif\source\repos\SaleProjext\Business\Concrete\SalesManager.cs

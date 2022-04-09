@@ -1,0 +1,17 @@
+﻿C:\Users\kasif\source\repos\SaleProjext\DataAccess\Abstract\IAffiliateDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Abstract\ICategoryDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Abstract\ICustomerDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Abstract\IEntityRepository.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Abstract\IInvoiceDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Abstract\IMemberTypeDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Abstract\IProductDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Concrete\EntitiyFramework\EfCategoryDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Concrete\EntitiyFramework\EfCustomeDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Concrete\EntitiyFramework\EfProductDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Concrete\EntitiyFramework\NortwindContext.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Concrete\InMemory\InMemoryAffiliateDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Concrete\InMemory\InMemoryCategoryDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Concrete\InMemory\InMemoryCustomerDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Concrete\InMemory\InMemoryInvoiceDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Concrete\InMemory\InMemoryMemberTypeDal.cs
+C:\Users\kasif\source\repos\SaleProjext\DataAccess\Concrete\InMemory\InMemoryProductDal.cs

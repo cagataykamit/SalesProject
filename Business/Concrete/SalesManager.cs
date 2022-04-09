@@ -8,13 +8,13 @@ using DataAccess.Concrete.InMemory;
 
 namespace Business.Concrete
 {
-    public class SalesManager
+    public static class SalesManager
     {
-        public decimal CalculateAdditionalDiscounts(decimal amount)
+        public static  decimal CalculateAdditionalDiscounts(decimal amount)
         {
             return Math.Floor(amount / 200) * 5;
         }
-        public decimal CalculateAllDiscounts(decimal discountRate, decimal discountableTotalAmount, decimal nonPercDiscountableTotalAmount, out decimal discountAmount)
+        public static decimal CalculateAllDiscounts(decimal discountRate, decimal discountableTotalAmount, decimal nonPercDiscountableTotalAmount, out decimal discountAmount)
         {
             decimal totalAmount = nonPercDiscountableTotalAmount + discountableTotalAmount;
             //müşteriye özel indirim tutarını hesapla
@@ -27,7 +27,7 @@ namespace Business.Concrete
             return totalAmount;
         }
 
-        public void DoSale()
+        public static int DoSale()
         {
             //login
             CustomerManager customerManager = new CustomerManager(new InMemoryCustomerDal());
@@ -49,11 +49,10 @@ namespace Business.Concrete
             basketManager.AddProduct(product4);
 
             //toplam sepet tutarını hesapla
-            decimal discountRate = customerManager.GetDiscountRateForCustomer(customer1);
+            decimal discountRate = CustomerManager.GetDiscountRateForCustomer(customer1);
             decimal discountableTotalAmount = basketManager.GetDiscountableTotalAmount();
             decimal nonPercDiscountableTotalAmount = basketManager.GetNonPercDiscountableTotalAmount();
-            decimal discountAmount;
-            decimal totalAmount = CalculateAllDiscounts(discountRate, discountableTotalAmount, nonPercDiscountableTotalAmount, out discountAmount);
+            decimal totalAmount = CalculateAllDiscounts(discountRate, discountableTotalAmount, nonPercDiscountableTotalAmount, out decimal discountAmount);
 
             //Faturayı düzenle
             Invoice invoice = new Invoice()
@@ -68,6 +67,8 @@ namespace Business.Concrete
             Console.WriteLine("InvoiceTime: " + invoice.InvoiceTime);
             Console.WriteLine("DiscountAmount: " + invoice.DiscountAmount);
             Console.WriteLine("TotalAmount: " + invoice.TotalAmount);
+
+            return 0;
         }
     }
 }

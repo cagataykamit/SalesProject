@@ -11,7 +11,7 @@ namespace Business.Concrete
 {
     public class CustomerManager : ICustomerService
     {
-        ICustomerDal _customerDal;
+        readonly ICustomerDal _customerDal;
 
         public CustomerManager(ICustomerDal customerDal)
         {
@@ -26,16 +26,15 @@ namespace Business.Concrete
         { 
             return _customerDal.GetAll(c=>c.Id==id);
         }
-        public decimal GetDiscountRateForCustomer(User user)
+        public static decimal GetDiscountRateForCustomer(User user)
         {
             decimal discountRate = 0;
             if (user is Affiliate)
             {
                 discountRate = 0.10m;
             }
-            else if (user is Customer)
+            else if (user is Customer customer)
             {
-                Customer customer = (Customer)user;
                 switch (customer.MemberTypeId)
                 {
                     case 1:

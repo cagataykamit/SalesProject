@@ -11,7 +11,6 @@ namespace Business.Abstract
     {
         void AddProduct(Product product);
         void RemoveProduct(Product product);
-        //List<Product> GetProducts();
         decimal GetNonPercDiscountableTotalAmount();
         decimal GetDiscountableTotalAmount();
     }

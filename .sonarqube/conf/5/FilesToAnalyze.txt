@@ -1,0 +1,9 @@
+﻿C:\Users\kasif\source\repos\SaleProjext\Entities\Abstract\IEntity.cs
+C:\Users\kasif\source\repos\SaleProjext\Entities\Concrete\Affiliate.cs
+C:\Users\kasif\source\repos\SaleProjext\Entities\Concrete\Basket.cs
+C:\Users\kasif\source\repos\SaleProjext\Entities\Concrete\Category.cs
+C:\Users\kasif\source\repos\SaleProjext\Entities\Concrete\Customer.cs
+C:\Users\kasif\source\repos\SaleProjext\Entities\Concrete\Invoice.cs
+C:\Users\kasif\source\repos\SaleProjext\Entities\Concrete\MemberType.cs
+C:\Users\kasif\source\repos\SaleProjext\Entities\Concrete\Product.cs
+C:\Users\kasif\source\repos\SaleProjext\Entities\Concrete\User.cs

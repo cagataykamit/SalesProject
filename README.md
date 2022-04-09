@@ -2,6 +2,9 @@
 
 - Projeyi Visual Studio 2019'da geliştirdim.
 - UnitTest aracı olarak MSTest.TestAdapter kullandım.
+- SonarAnalyzer.Csharp indirdim ve bulguları çözdüm.
+- coverlet.msbuild ile projeyi analiz ettim.
+- SonarQube ile issue'ları çözdüm. 
 
 # Projeyi çalıştırmak için
 - Projeyi indirip Visual Studio 2019'da açtıktan sonra F5'e basarak çalıştırabilirsiniz.
@@ -17,6 +20,6 @@
 - Unit Test Metodlarına TestSales metodu ekleyerek projenin tam kapsamlı testini yaptım.
 ![UnitTestResults](https://imgyukle.com/f/2022/04/09/Ro778P.png)
 
-- Sonarqube Test Results
-![SonarqubeTestResults-1](https://imgyukle.com/f/2022/04/09/REIlSR.png)
-![SonarqubeTestResults-2](https://imgyukle.com/f/2022/04/09/REIfYv.png)
+- SonarQqube Test Results
+![SonarQubeTestResults-1](https://imgyukle.com/f/2022/04/09/REIlSR.png)
+![SonarQubeTestResults-2](https://imgyukle.com/f/2022/04/09/REIfYv.png)

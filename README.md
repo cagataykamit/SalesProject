@@ -17,4 +17,6 @@
 - Unit Test Metodlarına TestSales metodu ekleyerek projenin tam kapsamlı testini yaptım.
 ![UnitTestResults](https://imgyukle.com/f/2022/04/09/Ro778P.png)
 
+-Sonarqube Test Results
+![SonarqubeTestResults](https://imgyukle.com/i/REIBvH)
 

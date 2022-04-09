@@ -1,6 +1,7 @@
 # SalesProject
 
 - Projeyi Visual Studio 2019'da geliştirdim.
+- UnitTest aracı olarak MSTest.TestAdapter kullandım.
 
 # Projeyi çalıştırmak için
 - Uygulamayı indirip F5'e basarak çalıştırabilirsiniz.
